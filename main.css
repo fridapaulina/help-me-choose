@@ -30,20 +30,25 @@ h1 {
 
 input {
   padding:  8px;
-  color: grey;
-  border: 2px solid grey;
+  background-color: grey;
+  border: 0px;
+  color: #FFF;
+  border-radius: 8px;
+}
+
+input::placeholder {
+  color: white;
 }
 
 .addOption {
   margin-top: 10px;
   font-size: 12px;
   padding: 6px;
-  background-color: grey;
-  color: white;
 }
 
 button {
   background-color: FFF;
+  color: grey;
   border: 2px solid grey;
   text-align: center;
   border-radius: 8px;
@@ -52,6 +57,6 @@ button {
 .Go {
   padding: 23px;
   font-size: 30px;
-  letter-spacing: 2px;
-  color: grey;
+  letter-spacing: 3px;
+
 }
