@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: EEE;
+  background-image: url(https://imgflip.com/s/meme/Cute-Cat.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-family: helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.inputSection {
+  margin: 50px 0px 80px 0px;
+  width: 400px;
+}
+
+.inputs {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+input {
+  padding:  8px;
+  color: grey;
+  border: 2px solid grey;
+}
+
+.addOption {
+  margin-top: 10px;
+  font-size: 12px;
+  padding: 6px;
+  background-color: grey;
+  color: white;
+}
+
+button {
+  background-color: FFF;
+  border: 2px solid grey;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.Go {
+  padding: 23px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: grey;
+}
