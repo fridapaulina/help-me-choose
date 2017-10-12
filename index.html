@@ -6,7 +6,7 @@
     <link href="./main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1>Få hjälp med att välja mellan...</h1>
+    <h1 class="rubrik">Få hjälp med att välja mellan...</h1>
     <div class="inputSection">
       <div class="inputs">
         <input placeholder="Något.."></input>
@@ -22,11 +22,26 @@
     $(function(){
       $('.resultSection').hide()
 
+
       var add_option = function() {
         $('.inputs').append('<input></input>')
       }
 
       $('.addOption').click(add_option)
+
+      var options = []
+      var submit = function() {
+        $('.inputSection').hide()
+        $('.rubrik').text("Resultat:")
+        $('.resultSection').css('display', 'flex')
+        $('input').each(function() {
+          options.push($(this).val())
+        })
+        var winner = options[Math.floor(Math.random() * options.length)]
+        console.log(winner)
+        $('.resultSection').text(winner)
+      }
+      $('.Go').click(submit)
     })
 
     </script>

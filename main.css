@@ -28,23 +28,18 @@ h1 {
 
 }
 
+
 input {
   padding:  8px;
   background-color: grey;
   border: 0px;
-  color: #FFF;
+  color: white;
   margin-top: 10px;
   border-radius: 8px;
 }
 
 input::placeholder {
   color: white;
-}
-
-.addOption {
-  margin-top: 10px;
-  font-size: 12px;
-  padding: 6px;
 }
 
 button {
@@ -55,9 +50,33 @@ button {
   border-radius: 8px;
 }
 
+.addOption {
+  margin-top: 10px;
+  font-size: 12px;
+  padding: 6px;
+  transition:all 0.3s ease;
+}
+
 .Go {
   padding: 23px;
   font-size: 30px;
   letter-spacing: 3px;
+  transition:all 0.3s ease;
+}
 
+.Go:hover{
+  background-color: EEE;
+}
+
+.addOption:hover{
+  background-color: EEE;
+}
+
+.resultSection {
+  font-family: helvetica, sans-serif;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
 }
