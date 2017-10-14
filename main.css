@@ -64,12 +64,27 @@ button {
   transition:all 0.3s ease;
 }
 
-.Go:hover{
-  background-color: EEE;
+.refresh {
+  padding: 23px;
+  font-size: 30px;
+  letter-spacing: 3px;
+  transition:all 0.3s ease;
 }
 
 .addOption:hover{
   background-color: EEE;
+}
+
+.Go:hover{
+  background-color: EEE;
+}
+
+.refresh:hover{
+  background-color: EEE;
+}
+
+.Buttons{
+  flex-direction: row;
 }
 
 .resultSection {
